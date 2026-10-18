@@ -1,0 +1,1 @@
+import {WifiOff} from "lucide-react";import Brand from "@/components/Brand";export default function OfflinePage(){return <main className="offline-page"><Brand/><WifiOff size={45}/><h1>Você está offline</h1><p>Conecte-se à internet para acessar recursos em tempo real do Nexa.</p></main>;}

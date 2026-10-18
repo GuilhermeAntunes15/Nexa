@@ -1,0 +1,4 @@
+"use client";
+import Link from "next/link";
+import {CalendarPlus,HeartHandshake,MessageSquareText} from "lucide-react";
+export default function CreatePage(){return <main className="create-page"><header><span className="badge">Criar</span><h1>O que você quer fazer?</h1></header><div className="create-options"><Link href="/app/criar/role" className="create-option nexa-card"><CalendarPlus size={28}/><div><strong>Criar rolê</strong><p>Café, estudo, esporte, evento ou qualquer atividade.</p></div></Link><Link href="/app/criar/post" className="create-option nexa-card"><MessageSquareText size={28}/><div><strong>Publicar</strong><p>Compartilhe algo com a comunidade.</p></div></Link><Link href="/app/sos/novo" className="create-option nexa-card"><HeartHandshake size={28}/><div><strong>Preciso de ajuda</strong><p>Crie um pedido no SOS Delas.</p></div></Link></div></main>;}
