@@ -8,9 +8,7 @@ export default async function AppLayout({ children }) {
 
   const { data: { user } } = await supabase.auth.getUser();
 
-  if (!user) {
-    redirect("/entrar");
-  }
+  if (!user) return null;
 
   const { data: profile } = await supabase
     .from("profiles")
